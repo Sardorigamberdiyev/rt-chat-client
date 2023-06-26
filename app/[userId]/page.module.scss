@@ -1,0 +1,133 @@
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.containerWrapper {
+    display: flex;
+}
+
+.leftContainers {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+}
+
+.rightContainers {
+    display: flex;
+    align-items: flex-start;
+}
+
+.chatContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.chatInfo {
+    background-color: white;
+    border: 2px solid lightgreen;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.messages {
+    background-color: lightgreen;
+    padding: 2rem .5rem;
+    
+    &__wrapper {
+        min-height: 400px;
+        max-height: 400px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            background-color: white;
+            border-radius: .5rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: lightgreen;
+            border: 1px solid white;
+            border-radius: .5rem;
+        }
+    }
+}
+
+.actions {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid lightgreen;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+
+    input {
+        height: 100%;
+        padding: .5rem 1rem .5rem;
+        border-radius: .5rem;
+        border: none;
+        background-color: transparent;
+        flex-grow: 3;
+
+        &:focus {
+            outline-style: none;
+        }
+    }
+
+    button {
+        height: 100%;
+        background-color: transparent;
+        flex-grow: 1;
+        color: black;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-left-color: lightgreen;
+        transition-duration: .1s;
+
+        &:disabled {
+            cursor: no-drop;
+            color: black;
+        }
+    }
+}
+
+.profileContainer,
+.userContainer {
+    h3 {
+        text-align: center;
+    }
+}
+
+.profile {
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.users {
+    padding: 1rem;
+}
+
+.leaveBtn {
+    margin: 1rem 0 0 2rem;
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    transition-duration: .2s;
+
+    &:hover {
+        border-radius: .5rem;
+    }
+
+    &:focus {
+        outline-style: none;
+    }
+}

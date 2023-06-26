@@ -1,0 +1,48 @@
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.message {
+    max-width: 90%;
+    display: flex;
+    align-items: flex-end;
+
+    &__sender {
+        padding: .5rem;
+        color: white;
+    }
+
+    &__content {
+        padding: .5rem;
+        background-color: white;
+        border-radius: 1rem .5rem;
+    }
+
+    &__text {
+        margin: 0 0 1rem;
+    }
+
+    &__time {
+        text-align: end;
+        font-size: 12px;
+    }
+}
+
+.main.me {
+    justify-content: flex-end;
+}
+
+.message.me {
+    flex-direction: row-reverse;
+}
+
+.message__content.me {
+    border-radius: .5rem 1rem;
+}
+
+.message__time.me {
+    text-align: start;
+}

@@ -1,0 +1,53 @@
+
+.main {
+    h1 {
+        text-align: center;
+    }
+}
+
+.btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        width: 100%;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    input {
+        width: 100%;
+        padding: .5rem;
+        margin-bottom: 1.5rem;
+        box-sizing: border-box;
+
+        &::placeholder {
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        &:focus {
+            outline-style: none;
+        }
+    }
+}
+
+.connectForm {
+    width: 350px;
+}
+
+.roomsLink {
+    text-align: end;
+    padding: .5rem 0;
+}

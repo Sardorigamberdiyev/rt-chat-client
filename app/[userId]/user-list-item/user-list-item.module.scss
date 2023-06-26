@@ -1,0 +1,22 @@
+
+.main {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: .5rem;
+}
+
+.offline.status {
+    background-color: darkred;
+}
